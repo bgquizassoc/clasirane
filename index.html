@@ -5,32 +5,41 @@
 <title>Игри на Знания</title>
 <style>
 body {
-background-color: #001a33; /* тъмно син фон */
-color: yellow;
-font-family: Arial, sans-serif;
+    background-color: #001a33;
+    color: yellow;
+    font-family: Arial, sans-serif;
+    text-align: center; /* центрира заглавието */
 }
+
 table {
-width: 100%;
-border-collapse: collapse;
+    border-collapse: collapse;
+    margin: 0 auto; /* центрира таблицата */
+    width: auto; /* ширина според съдържанието */
 }
+
+th, td {
+    padding: 8px 12px;
+    border: 1px solid #666;
+    white-space: nowrap; /* предотвратява пречупване на текст */
+}
+
 th {
-background-color: #003366;
-color: #ffff66; /* по-жълто за заглавия */
-padding: 8px;
-border: 1px solid #666;
+    background-color: #003366;
+    color: #ffff66;
 }
+
 td {
-padding: 6px;
-border: 1px solid #666;
-color: #ffea80; /* бледожълт текст */
+    color: #ffea80;
 }
+
 tr:nth-child(even) {
-background-color: #00264d;
+    background-color: #00264d;
 }
 </style>
 </head>
 <body>
 <h1>Игри на Знания - Светкавичен куиз, епизод 36 (30 ноември 2025 г)</h1>
+
 <table>
 <thead>
 <tr>
@@ -41,6 +50,7 @@ background-color: #00264d;
 <th>Точки</th>
 </tr>
 </thead>
+
 <tbody>
 <tr><td>1</td><td class="name">Пламен Младенов</td><td>22910</td><td>26</td><td>100</td></tr>
 <tr><td>2</td><td class="name">Борис Русев</td><td>20220</td><td>24</td><td>95</td></tr>
@@ -102,3 +112,4 @@ background-color: #00264d;
 </table>
 </body>
 </html>
+
