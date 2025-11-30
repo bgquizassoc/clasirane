@@ -13,14 +13,24 @@ body {
 
 table {
     border-collapse: collapse;
-    margin: 0 auto; /* центрира таблицата */
-    width: auto; /* ширина според съдържанието */
+    margin: 0 auto;  /* центрира таблицата */
+    width: auto;     /* ширина според съдържанието */
 }
 
+/* базово оформление */
 th, td {
     padding: 8px 12px;
     border: 1px solid #666;
-    white-space: nowrap; /* предотвратява пречупване на текст */
+    white-space: nowrap;
+    text-align: center;
+}
+
+/* колоната Име — auto-fit + ляво подравняване */
+table th:nth-child(2),
+table td:nth-child(2) {
+    text-align: left;
+    width: auto;            /* авто размер */
+    max-width: none;        /* без ограничение */
 }
 
 th {
@@ -112,4 +122,5 @@ tr:nth-child(even) {
 </table>
 </body>
 </html>
+
 
